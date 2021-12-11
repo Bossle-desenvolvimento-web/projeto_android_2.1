@@ -1,0 +1,251 @@
+@charset 'utf-8';
+
+
+    
+
+                @font-face{font-family: 'Libre Baskerville', serif;
+                font-family: 'Passion One', cursive;
+                font-family: 'Roboto', sans-serif;
+                font-family: 'Sriracha', cursive;
+                    
+                   
+                }
+
+               
+                 
+
+            :root{ --font_padrao: Verdana, Geneva, Tahoma, sans-serif;
+                    --font_titulo_um:'Passion One', cursive;
+                    --font_titulo_dois:'Roboto', sans-serif;
+                    --font_titulo_tres: 'Sriracha', cursive;
+                    --font_titulo_quatro: 'BebasNeue-Regular.ttf';
+                   
+                --cor01:#BAC3CF;
+                    --cor02:#10B000;
+                    --cor03:#000000;
+                        --cor04:#FFFFFF;}
+
+         
+
+               html,body{ min-height: 100vh;}
+
+               header{background-color: var(--cor02);
+                                              width: auto;
+                                               height: 200px;
+                         margin-top: -48px;                   
+                                            }
+
+               nav{padding: 15px;
+                   margin:2px;
+                    margin-top: -30px;
+                 padding-left: 365px;} 
+                    
+                    nav>a{padding: 15px;
+                           text-decoration: none;
+                            list-style-type: none;
+                              font-weight: bolder;
+                               color:white;}
+
+                              nav>a:hover{color:black;
+                                           background-color: white;
+                                            border:black solid 3px;}
+
+
+                 .titulos{font-family:var(--font_titulo_quatro);
+                            font-variant: small-caps;
+                              text-align: center;
+                             background-color: var(--cor02);} 
+
+               
+                   #cabecalho{font-size: 5em;
+                                padding-left:40px;
+                                         }
+                 #cabecalhoo{font-family: var(--font_titulo_quatro);
+                               font-size: 3em;
+                               margin-top: -58px;
+                               padding-left:335px;}
+
+
+                               #android-army{width: 400px;
+                                             height: 250px;
+                                             border: solid black 3px;
+                                              margin-left: 400px;}
+
+
+                  .news{/**essa configuração vale pra duas sections(normal e imagem)**/
+                  padding-top: 10vh;
+                  padding-bottom: 10vh; 
+              /** o proximo comando aumenta o espaço entre as linhas de texto**/
+                 line-height: 2em;
+                /** agora afasta o texto da margem esquerda**/
+                   padding-left: 50px;
+                   
+                   font-size:2vw ; } 
+
+                   
+
+                .externos{background-color: var(--cor02);
+                          border: solid 3px black;
+                           color:white;
+                             font-weight: bolder;}
+
+                   
+                   #dandroid{ width: 800px;
+                              height: 266px;
+                               border: black solid 3px;
+                               margin-left: 200px;}
+
+
+                   #bugdroid{width: 300px;
+                              height: 195px;
+                               border: black solid 3px;
+                               margin-left: 400px;}   
+
+
+                      
+                    .news_img{ background-color: lightslategray;
+                                            color: white;
+                                            text-shadow: 1px 1px 0px black;
+                                            box-shadow: inset 6px 6px 13px 0px black;
+                                            background-attachment: fixed;} 
+
+                 section>p{ 
+                             padding-bottom: 2em;
+                                   }                         
+                                            
+                                  /** section#img_zero{background-image: url(images/android-fundo_um.jpg);
+                                                    background-position: right center;
+                                                    background-size: cover;
+                                                       height: 300px;}**/                   
+                            
+                                            
+                     section#img_um{background-image:url(images/android-fundo_um.jpg) ;
+                                        background-position: right center;
+                                        background-size: cover;
+                                        height:300px;}
+                     
+                     
+                     section#img_dois{background-image: url(images/android-fundo_dois.jpg);
+                                        background-position: right center;
+                                        background-size: cover;
+                                        height: 300px;}
+
+
+                                        #art_dois{width: 1100px;
+                                          height: 300px;
+                                          background-color: var(--cor4);
+                                          }
+             
+                                          .slider{width: 500px;
+                                             height: 250px;
+                                             margin: auto;
+                                             margin-top: 20px;
+                                         }
+                                      
+                                      #slider{
+                                          overflow: hidden;
+                                      
+                                      }
+                                      #slider > .slider-content{
+                                          display: flex;
+                                          flex-wrap: nowrap;
+                                          width: 100%;
+                                          transition: all 500ms ease;
+                                      
+                                      
+                                      }
+                                      
+                                      #slider{width:640px;
+                                             height:600px;
+                                              margin: auto;}
+                                      
+                                      #slider > .slider-content > .slider-item {
+                                          flex: 0 0 auto;
+                                          width: 100%;
+                                      }
+                                      
+                                      #slider > input:nth-child(1):checked ~ .slider-content{
+                                          transform: translateX(0%);
+                                      }
+                                      
+                                      #slider > input:nth-child(2):checked ~ .slider-content{
+                                          transform: translateX(-100%);
+                                      }
+                                      #slider > input:nth-child(3):checked ~ .slider-content{
+                                          transform: translateX(-200%);
+                                      }
+                                      
+                                      #slider > input:nth-child(4):checked ~ .slider-content{
+                                          transform: translateX(-300%);
+                                      }
+                                      #slider > input:nth-child(5):checked ~ .slider-content{
+                                        transform: translateX(-300%);
+                                    }
+                                    #slider > input:nth-child(6):checked ~ .slider-content{
+                                      transform: translateX(-400%);
+                                  }
+                                  #slider > input:nth-child(7):checked ~ .slider-content{
+                                    transform: translateX(-500%);
+                                }
+                                #slider > input:nth-child(8):checked ~ .slider-content{
+                                  transform: translateX(-600%);
+                              }
+                              #slider > input:nth-child(9):checked ~ .slider-content{
+                                transform: translateX(-700%);
+                            }
+                                        
+                                        
+                                    
+                                    
+                                    
+                                    
+                                   
+                                    
+                                    
+
+
+
+                     section.imagem > p{ /** o proximo comando cria uma caixa para deixar o texto legível mesmo com uma imagem de fundo**/
+                        background-color: rgba(0, 0 ,0,0,253);
+                        display: inline-block;/**ajusta o tamanho da caixa em relação ao texto**/
+                             padding: 5px;
+                                     
+                                  }  
+                                  
+                                  .news_img{  padding-top: 10vh;
+                                                padding-bottom: 10vh; 
+                                           
+                                            line-height: 2em;
+                                           
+                                                padding-left: 50px;
+                                                
+                                                font-size:2vw ; } 
+
+
+                                       #mudacor{color: #252f3b;}         
+                                        
+                                              
+                               
+
+
+
+
+
+
+
+
+                               footer{background-color:var(--cor02);
+                                            width: auto;
+                                            height: 110px;
+                                         font-size: 1.5em ;
+                                          padding-left: 20px;
+                                        border: solid black 3px;
+                                         margin-top: 3px;}
+
+
+
+
+
+              
+
+               
